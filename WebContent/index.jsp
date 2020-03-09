@@ -21,19 +21,19 @@
 				<h3>Acceso a ProgamaTEC</h3>
 			</div>
 			<div class="card-body">
-				<form>
+				<form action="Acceso?op=l" method="post">
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="email" class="form-control" placeholder="Correo Electronico" required="required">
+						<input type="email" class="form-control" placeholder="Correo Electronico" required="required" name="email">
 						
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="password" class="form-control" placeholder="Password" required="required">
+						<input type="password" class="form-control" placeholder="Password" required="required" name="password">
 					</div>
 					
 					<div class="form-group">
