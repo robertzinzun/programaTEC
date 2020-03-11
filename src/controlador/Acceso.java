@@ -44,9 +44,8 @@ public class Acceso extends HttpServlet {
 				Usuario u=udao.validar(nombre, password);
 				if(u.getNombre()!=null){
 					rd=request.getRequestDispatcher("jsp/comunes/principal.jsp");
-					//sesion.setAttribute("conexion", bd);
 					sesion.setAttribute("usuario", u);
-					sesion.setMaxInactiveInterval(10*60); 
+					sesion.setMaxInactiveInterval(20*60); 
 				}
 		}
 		rd.forward(request, response);
